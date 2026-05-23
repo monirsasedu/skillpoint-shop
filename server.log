@@ -1,0 +1,15 @@
+
+> @pixer/shop@6.9.0 dev
+> next dev
+
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:3000
+  - Environments: .env
+
+ ✓ Ready in 2.6s
+ ○ Compiling / ...
+ ✓ Compiled / in 6.8s (1724 modules)
+ ✓ Compiled /checkout in 1028ms (1747 modules)
+ ✓ Compiled /orders/[tracking_number]/payment in 577ms (1802 modules)
+ ○ Compiling /authors/[shopSlug] ...
+ ✓ Compiled /authors/[shopSlug] in 71.7s (1791 modules)
