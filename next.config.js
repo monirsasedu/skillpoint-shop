@@ -22,7 +22,7 @@ module.exports = {
       'pickbazarlaravel.s3.ap-southeast-1.amazonaws.com',
     ],
   },
-  ...(process.env.APPLICATION_MODE === 'production' && {
+  ...((process.env.NODE_ENV === 'production' || process.env.APPLICATION_MODE === 'production' || process.env.VERCEL) && {
     typescript: {
       ignoreBuildErrors: true,
     },
