@@ -17,15 +17,8 @@ export const getStaticPaths: GetStaticPaths<ParsedQueryParams> = async ({
   locales,
 }) => {
   invariant(locales, 'locales is not defined');
-  const { data } = await client.products.all({ limit: 100 });
-  const paths = data?.flatMap((product) =>
-    locales?.map((locale) => ({
-      params: { productSlug: product.slug },
-      locale,
-    }))
-  );
   return {
-    paths,
+    paths: [],
     fallback: 'blocking',
   };
 };
